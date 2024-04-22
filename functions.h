@@ -1,0 +1,57 @@
+#include "structures.h"
+#include <stdbool.h>
+#include <stdio.h>
+
+int compareTwoWords(char* word1, char* word2);
+int checkInt();
+float checkFloat();
+int ContinueWish(int tasknumber);
+int TaskNumCheck(int tasknum);
+void WordCancellation(char*string, int length);
+void pushOperand(OperandNode **top, float value);
+float popOperand(OperandNode **top);
+void pushOperator(OperatorNode **top, char value);
+char popOperator(OperatorNode **top);
+char peekOperator(OperatorNode **top);
+int getPriority(char op);
+float ApplyOperator(char op, float operand1, float operand2);
+bool isValidChar(char c);
+bool isOperator(char c);
+bool hasHigherPriority(char op1, char op2);
+int firstCheck(char* expression, int length, int *errorPosition);
+int checkInfixExpression(char *expression);
+void calculateAction(OperatorNode** operators,OperandNode** operands);
+void actionOne(int* i, int* j, char* operandString,char* expression);
+float evaluateInfixExpression(char* expression);
+void chooseFunctionTaskOne();
+int findStringNumber(FILE *taskFile, char* buffer);
+Hospitals* writeDataFromFile();
+void writeDataToFile(Hospitals *hosp);
+void printData(Hospitals *hosp);
+void addNewHospital(Hospitals *hosp);
+void freePatients(HospitalNode*curHospital, PatientNode*patientTemp);
+void deleteHospital(Hospitals*hosp);
+int enterNewHospital(HospitalNode *newHospital);
+void enterNewPatient(PatientNode *newPatient);
+PatientNode* makeConnectionOne(HospitalNode *newHospital,PatientNode *patientTemp,PatientNode*newPatient);
+PatientNode* makeConnectionTwo(PatientNode *patientTemp,PatientNode*newPatient);
+void makeConnectionThree(Hospitals* hosp, HospitalNode*newHospital);
+void makeConnectionFour(Hospitals* hosp, HospitalNode*newHospital);
+void writeHospitalData(HospitalNode*newHospital, char*currentString, char* currentWord);
+int commandOne(PatientNode *newPatient, int IndefWordLength, char*currentWord);
+int commandTwo(PatientNode *newPatient, int IndefWordLength, char*currentWord);
+int commandThree(PatientNode *newPatient,int currentPeople, int *IndefWordLength, char*currentWord);
+int writePatients(HospitalNode*newHospital,PatientNode*patientTemp,int currentPeople,char*currentString,char*currentWord);
+void writeHospital(HospitalNode *newHospital, FILE* file, char*currentString, char*currentWord);
+float calculateDistance(float hospAddressX,float hospAddressY,float patAddressX,float patAddressY);
+void removePatient(Hospitals*hosp);
+int printListOfPatients(Hospitals*hosp);
+void findAndRemove(Hospitals*hosp,int choice);
+void putPatientIntoHospital(Hospitals*hosp);
+int findNearestHospital(Hospitals*hosp,int *i,PatientNode*newPatient);
+void noSpace(PatientNode*newPatient);
+void makeConnections(Hospitals*hosp, int chosenHospitalIndex, PatientNode*curPatient, PatientNode*newPatient);
+void findHospital(Hospitals*hosp);
+int printHospitalsAndChoose(Hospitals*hosp);
+void clear(Hospitals*hosp);
+void chooseFunctionTaskTwo();

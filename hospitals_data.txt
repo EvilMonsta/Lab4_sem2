@@ -1,0 +1,12 @@
+hosital one
+4 1 10.4 212.0
+Vladimirovskiy Vladimir Vladimirovich 3.0 30.0 Manskiy Man Manov 12.0 15.2 Rickovich Rick Rickov 16.0 12.0 
+hospital two
+1 1 100.0 0.0
+
+hospital3
+1 0 30.0 -100.0
+Nonamed Noname Nonamev 100.0 1.0 
+HOSP
+2 0 1.0 2.0
+Debris Denis Denisov 1.0 2.0 Knut Robin Gudov 2.0 1000.0 
